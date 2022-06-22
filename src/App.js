@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Cards from "./Components/Cards";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>we are learning props today</h1>
+      <div className="cardContainer">
+        <Cards age="old enough" location="Hamburg" speaking={false}>
+          Julia
+        </Cards>
+        <Cards
+          name="Thomas"
+          age="also old enough"
+          location="Düsseldorf"
+          speaking={true}
+        ></Cards>
+        <Cards
+          name="Paul"
+          age="older than 18, for sure"
+          location="Schwerin"
+          speaking={false}
+        ></Cards>
+      </div>
+    </>
   );
 }
 

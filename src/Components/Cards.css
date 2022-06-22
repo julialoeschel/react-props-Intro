@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background-color: antiquewhite;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+}
+
+.additional {
+  align-self: end;
+  padding: 10px;
+}
+
+.cardContainer--active {
+  background-color: hotpink;
+}
