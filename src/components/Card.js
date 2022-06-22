@@ -1,5 +1,5 @@
 import React from "react";
-import "./Cards.css";
+import "./Card.css";
 
 export default function Cards({ children, name, age, speaking, location }) {
   // console.log(props);
